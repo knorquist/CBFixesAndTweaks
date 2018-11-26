@@ -1,11 +1,15 @@
 # CBFixesAndTweaks
-Script to automate CB Fixes and Tweaks
-So far this script has been tested on the Toshiba Chromebook 2 (Swanky) running Ubuntu 16.04.
-It fixes sound (unfortunately the mic still doesn't work) and keyboard layout.
-See http://www.fascinatingcaptain.com/blog/automate-chromebook-fixes-for-linux/
 
-# How to use
-Copy and paste these commands in a terminal window and reboot!
+This project is a fork of fascinatingcaptain's github repo. The audio tweaks have been removed, since audio support for Gandof is now in the current kernel. This also means the logic for checking for Swanky or Gandof was unnecessary, and was also removed.
 
-cd ~/Downloads; sudo apt-get -y install curl; curl -LOk https://github.com/fascinatingcaptain/CBFixesAndTweaks/archive/master.tar.gz; tar -zxvf master.tar.gz; cd CBFixesAndTweaks-master; sudo -E bash CBFixesAndTweaks.sh
+This script should work on any version of the Toshiba Chromebook 2. I would **assume** but cannot confirm that it will work on most any chromebook with the same keyboard layout - but that's a big **assume**, so don't get mad at me when it doesn't work.
 
+This script comes with no warranties, guarantees of function, etc.
+
+# Instructions
+
+Download or clone the repo and run the script:
+
+`sudo ./CBFixesAndTweaks.sh`
+
+Let it do it's thing, and then reboot and log back in. Voila! Media keys mapped!
